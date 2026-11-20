@@ -68,7 +68,7 @@
 const $=id=>document.getElementById(id),canvas=$('board'),ctx=canvas.getContext('2d',{alpha:true});
 const axisNames=['X','Y','Z','W'],colors=['#68dfff','#b59bff','#ffcf73','#ff8dba'];
 const pairs=[['XY',0,1],['XZ',0,2],['XW',0,3],['YZ',1,2],['YW',1,3],['ZW',2,3]];
-const initial={XY:27,XZ:139,XW:71,YZ:5,YW:-22,ZW:51};
+const initial={XY:27,XZ:139,XW:71,YZ:5,YW:-22,ZW:-51};
 let angles={...initial},camYaw=-0.54,camPitch=0.35,zoom=1,layer=-1,showLabels=false,quiet=false,auto=false;
 let owner=new Uint8Array(216),turn=1,selected=0,hover=-1,winning=[],victor=0,history=[],screen=[],width=0,height=0,drag=null;
 const nodes=[],edges=[],lookup=new Map();
